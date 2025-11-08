@@ -48,8 +48,9 @@ onUnmounted(() => {
                 </div>
             </div>
         </nav>
+
         <section class="max-w-[1220px] mx-auto px-5 flex flex-col gap-y-10 justify-center">
-            <div class="text-white space-y-5 mt-32">
+            <div class="text-white space-y-5 mt-20">
                 <div class="max-w-fit mx-auto border border-[#28E98C] px-8 py-1 rounded-full">
                     <h3 class="text-[#28E98C] text-center">Hi, I’m Muhammad Hafizh</h3>
                 </div>
@@ -83,8 +84,10 @@ onUnmounted(() => {
 
         <section class="bg-white">
             <div class="max-w-[1220px] flex flex-wrap gap-y-8 justify-around items-center mx-auto px-5 py-20">
-                <div>
-                    <img src="/images/model.jpg" class="object-cover w-[34em] h-[26em] rounded-tl-[9em] rounded-br-[9em]" alt="">
+                <div class="relative">
+                    <div class="absolute -top-5 -right-5 w-32 h-32 bg-[#28E98C] bg-opacity-50 rounded-xl animate-bounce delay-300"></div>
+                    <img src="/images/modell.jpg" class="object-cover w-[34em] h-[26em] rounded-tl-[9em] rounded-br-[9em] rounded-bl-xl rounded-tr-xl shadow-2xl" alt="">
+                    <div class="absolute -bottom-5 -left-5 w-32 h-64 bg-[#28E98C] bg-opacity-50 rounded-xl animate-bounce"></div>
                 </div>
                 <div class="max-w-lg space-y-5">
                     <h1 class="text-5xl text-neutral-900 font-medium">My Story and Expertise</h1>
@@ -92,18 +95,35 @@ onUnmounted(() => {
                     <div class="flex flex-wrap gap-x-5">
                         <!-- button 2 -->
                         <a href="" class="group relative overflow-hidden flex w-fit gap-x-2 border bg-[#28E98C] px-8 py-4 rounded-full text-md font-medium transition-none">
-                            <span class="relative z-10 text-[#181818] group-hover:text-white transition-colors duration-300">Let's Talk</span>
-                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white duration-300 delay-200 relative z-10" />
+                            <span class="relative z-10 text-[#181818] group-hover:text-white transition-colors duration-300">More</span>
+                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 delay-200 relative z-10" />
                         </a>
                         <!-- button 3 -->
                         <a href="" class="group relative overflow-hidden flex w-fit gap-x-2 border border-neutral-800 bg-transparent px-8 py-4 rounded-full text-md font-medium transition-none">
                             <span class="relative z-10 text-neutral-800 group-hover:text-white transition-colors duration-300">Let's Talk</span>
-                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white duration-300 delay-200 relative z-10" />
+                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 delay-200 relative z-10" />
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="bg-white">
+            <div class="max-w-[1220px] flex flex-wrap gap-y-8 justify-around items-center mx-auto px-5 py-20">
+                <div class="relative">
+                    <h1 class="text-9xl text-center">If You Know <br> Then You Know</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white">
+            <div class="max-w-[1220px] flex flex-wrap gap-y-8 justify-around items-center mx-auto px-5 py-20">
+                <div class="relative">
+                </div>
+            </div>
+        </section>
+
+        
     </main>
 </template>
 
@@ -152,5 +172,19 @@ a.border-neutral-800.bg-transparent:hover::before {
 a.group .z-10 {
   position: relative;
   z-index: 10;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-5%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bounce {
+    animation: bounce 3s infinite;
 }
 </style>
