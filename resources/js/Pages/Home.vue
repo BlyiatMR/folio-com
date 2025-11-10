@@ -95,14 +95,14 @@ onUnmounted(() => {
                     <div class="flex flex-wrap gap-x-5">
                         <!-- button 2 -->
                         <a href="" class="group relative overflow-hidden flex w-fit gap-x-2 border bg-[#28E98C] px-8 py-4 rounded-full text-md font-medium transition-none">
-                            <span class="relative z-10 text-[#181818] group-hover:text-white transition-colors duration-300">More</span>
-                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 delay-200 relative z-10" />
+                            <span class="relative z-10 text-[#181818] group-hover:text-white transition-colors duration-300">Let's Talk</span>
+                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 relative z-10" />
                         </a>
                         <!-- button 3 -->
-                        <a href="" class="group relative overflow-hidden flex w-fit gap-x-2 border border-neutral-800 bg-transparent px-8 py-4 rounded-full text-md font-medium transition-none">
+                        <!-- <a href="" class="group relative overflow-hidden flex w-fit gap-x-2 border border-neutral-800 bg-transparent px-8 py-4 rounded-full text-md font-medium transition-none">
                             <span class="relative z-10 text-neutral-800 group-hover:text-white transition-colors duration-300">Let's Talk</span>
-                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 delay-200 relative z-10" />
-                        </a>
+                            <IconArrow icon="majesticons:arrow-up-line" class="rotate-45 group-hover:text-white group-hover:rotate-90 duration-300 relative z-10" />
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@ onUnmounted(() => {
         <section class="bg-white">
             <div class="max-w-[1220px] flex flex-wrap gap-y-8 justify-around items-center mx-auto px-5 py-20">
                 <div class="relative">
-                    <h1 class="text-9xl text-center">If You Know <br> Then You Know</h1>
+                    <h1 class="text-9xl font-semibold text-center">If You Know <br> Then You Know</h1>
                 </div>
             </div>
         </section>
